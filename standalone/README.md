@@ -4,6 +4,11 @@ This code integrates speech-to-text, text-to-speech, and customer service automa
 
 ---
 
+## Demo Video
+[![Encode 2025 Calling Agent Demo | Standalone Version | KGPian Analysts](yt.jpg)](https://www.youtube.com/watch?v=HA0ScCus5yU)
+
+---
+
 ## Overview
 This project is a real-time, voice-based customer interaction system that combines advanced AI, speech-to-text, text-to-speech, and database management technologies. It leverages Deepgram's API for accurate transcription and speech synthesis and Google Generative AI (Gemini) to provide intelligent and context-aware responses. Designed for versatility, the app can handle a variety of use cases, from customer service to domain-specific virtual assistants, with dynamic database integration for personalized and precise interactions. The system is easy to configure, scalable, and offers a seamless way to interact with users through natural, conversational speech.
 
