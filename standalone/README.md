@@ -132,7 +132,7 @@ You will need API keys for:
 
 
 ### 6. Set Up the `.env` File
-Create a file named `.env` in the root directory and open it using any text editor. Set up your API keys by writing them in the following format inside the file:
+Create a file named `.env` in the `standalone` directory and open it using any text editor. Set up your API keys by writing them in the following format inside the file:
 ```plaintext
 DEEPGRAM_API_KEY=<your_deepgram_api_key>
 GOOGLE_API_KEY=<your_google_api_key>
