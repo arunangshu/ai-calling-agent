@@ -70,7 +70,7 @@ Follow the steps below to set up and run the app on your system:
 Ensure you have the following installed on your system:
 - **Python 3.8+**
 - A package manager like `pip`
-- **Git and Github CLI**: For cloning the repository. If you don’t have it, [download Git here](https://git-scm.com/) and [download and install Github CLI here](https://cli.github.com/) and set it up using ```gh auth login```.
+- **Git and Github CLI**: For cloning the repository. If you don’t have it, [download Git here](https://git-scm.com/){:target="_blank"} and [download and install Github CLI here](https://cli.github.com/){:target="_blank"} and set it up using ```gh auth login```.
 
 ### 2. Clone the Repository
 ```bash
@@ -106,7 +106,7 @@ You will need API keys for:
 
 #### **Deepgram API**: For speech-to-text and text-to-speech.
 ##### If you already have a Deepgram account:
-1. Go to [Deepgram Console Log In](https://console.deepgram.com/login).
+1. Go to [Deepgram Console Log In](https://console.deepgram.com/login){:target="_blank"}.
 2. Login to your account.
 3. Click on `API Keys` on the left pane.
 4. Click on `Create a New API Key`.
@@ -115,7 +115,7 @@ You will need API keys for:
 7. Copy this secret API Key and save it somewhere safe. You will not be able to see the API key on the website again. If you lose the key, you will have to create a new one.
 
 ##### If you do not have a Deepgram account:
-1. Go to [Deepgram Console Sign Up](https://console.deepgram.com/signup).
+1. Go to [Deepgram Console Sign Up](https://console.deepgram.com/signup){:target="_blank"}.
 2. Click on `Sign up with Google` for ease
 3. Select your preferred Google Account and your account will be created.
 4. Click on `Create API Key`.
@@ -124,7 +124,7 @@ You will need API keys for:
 7. Copy this secret API Key and save it somewhere safe. You will not be able to see the API key on the website again. If you lose the key, you will have to create a new one.
 
 #### **Google Generative AI**: For chatbot functionality.
-1. Go to [Google AI Studio > Get API Key](https://aistudio.google.com/apikey)
+1. Go to [Google AI Studio > Get API Key](https://aistudio.google.com/apikey){:target="_blank"}
 2. Click on `Create API Key`
 3. Click on the Search Bar and select `Gemini API`.
 4. Click on `Create API key in existing project`.
