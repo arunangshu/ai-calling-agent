@@ -11,7 +11,6 @@
 ---
 
 ## 📑 Table of Contents
-- [AI Voice Calling Bot with Human-Like Conversations](#ai-voice-calling-bot-with-human-like-conversations)
 - [Project Highlights](#project-highlights-)
 - [Core Features](#core-features-)
 - [Technical Excellence](#technical-excellence-)
