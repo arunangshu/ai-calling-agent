@@ -46,7 +46,7 @@ This project is a real-time, voice-based customer interaction system that combin
    - Detects when the customer is satisfied (`EXIT` keyword) and terminates the conversation.
 
 ### High-Level Use Case:
-This script appears to be for a **customer service application** where:
+This script is for a **customer service application** where:
 - Customers interact via voice.
 - Queries are transcribed, processed, and answered using a combination of AI and database querying.
 - Responses are played back in real-time, providing an interactive, voice-based service experience.
