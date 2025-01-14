@@ -126,7 +126,7 @@ sudo apt-get install ffmpeg
 sudo yum install epel-release
 sudo yum install ffmpeg ffmpeg-devel
 ```
-### FFmpeg Setup Guide for Windows
+### If previous way does not work this is the alternative way to do ffmpeg installation :- 
 
 Follow these steps to download and set up FFmpeg on your Windows system using an alternative GitHub release.
 
