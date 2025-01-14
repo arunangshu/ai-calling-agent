@@ -1,3 +1,16 @@
+
+
+# 📑 Table of Contents
+- [AI Voice Calling Bot with Human-Like Conversations](#ai-voice-calling-bot-with-human-like-conversations)
+- [Project Highlights](#project-highlights)
+- [Core Features](#-core-features)
+- [Technical Excellence](#-technical-excellence)
+- [Use Cases](#️use-cases)
+- [Complete Setup Guide for Voice Call AI Application](#️complete-setup-guide-for-voice-call-ai-application)
+
+
+
+
 # AI Voice Calling Bot with Human-Like Conversations
 
 <div align="center">
@@ -11,7 +24,7 @@
   [![Google AI](https://img.shields.io/badge/Google%20AI-Gemini%20Pro-orange.svg)](https://ai.google.dev/)
 </div>
 
-## Project Highlights ✨
+# Project Highlights ✨
 
 - **Remarkably Human-Like Interactions**: Engages in natural, fluid conversations that feel genuinely human, complete with context awareness and appropriate pauses
 - **Emotional Intelligence**: Recognizes and responds to customer emotions, adapting tone and responses accordingly
@@ -39,7 +52,7 @@
 - **Efficient Audio Processing**: FFmpeg integration for optimal voice quality
 - **Clean Frontend**: Intuitive HTML/JavaScript interface
 
-## Perfect For
+## Use Cases
 
 - 🎯 Customer Service Excellence
 - 📅 Smart Appointment Management
