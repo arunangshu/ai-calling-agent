@@ -70,7 +70,7 @@ Follow the steps below to set up and run the app on your system:
 Ensure you have the following installed on your system:
 - **Python 3.8+**
 - A package manager like `pip`
-- **Github CLI**: For cloning the repository. If you don’t have it, [download and install here](https://cli.github.com/).
+- **Github CLI**: For cloning the repository. If you don’t have it, [download and install here](https://cli.github.com/) and set it up using ```gh auth login```.
 
 ### 2. Clone the Repository
 ```bash
