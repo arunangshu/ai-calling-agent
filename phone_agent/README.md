@@ -24,6 +24,7 @@
 
 - **Contextual AI Brain**: Powered by Google's Gemini Pro for incredibly natural conversations
 - **Sentiment Analysis**: Understands customer emotions and responds with appropriate empathy
+- **Intelligent Query Resolution**: Provides customers with accurate and detailed answers to any kind of inquiries among billions of equiry possible from a vast knowledge base.
 - **Interactive Voice Interface**: Crystal-clear voice synthesis with Deepgram for natural speech
 - **Smart Database Integration**: Seamlessly accesses and communicates database information (customise database .csv file as per the need)
 - **Real-Time Processing**: Lightning-fast speech recognition and response generation
@@ -31,7 +32,7 @@
 
 ## Technical Excellence 💫
 
-- **Advanced AI Technology**: Google Generative AI (Gemini Pro) for human-like conversation
+- **Advanced AI Technology**: Google Generative AI (gemini-2.0-flash-exp) for human-like conversation
 - **Professional Voice Services**: Twilio telephony integration
 - **High-Quality Speech**: Deepgram text-to-speech for natural voice output
 - **Robust Backend**: Python Flask server with comprehensive error handling
@@ -118,16 +119,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### requirements.txt Contents
-```
-flask==3.0.0
-twilio==8.10.0
-python-dotenv==1.0.0
-pandas==2.1.4
-pydub==0.25.1
-deepgram-sdk==2.12.0
-google-generativeai==0.3.1
-```
 
 ### Common Package Installation Issues
 1. **pydub Installation Issues**
