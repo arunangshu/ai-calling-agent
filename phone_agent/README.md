@@ -80,13 +80,13 @@
    ```
 3. Clone the repository using Git:
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/arunangshu/ai-calling-agent.git
    ```
-   Replace `your-username/your-repository-name` with the actual URL of the repository.
 
 4. Navigate into the cloned project folder:
    ```bash
-   cd your-repository-name
+   cd ai-calling-agent
+   cd phone_agent
    ```
 
 ---
