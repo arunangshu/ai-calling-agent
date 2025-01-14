@@ -1,0 +1,6 @@
+python-dotenv
+pyaudio
+google-generativeai
+deepgram-sdk
+pydub
+pandas

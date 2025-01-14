@@ -46,7 +46,7 @@ This project is a real-time, voice-based customer interaction system that combin
    - Detects when the customer is satisfied (`EXIT` keyword) and terminates the conversation.
 
 ### High-Level Use Case:
-This script is for a **customer service application** where:
+This script appears to be for a **customer service application** where:
 - Customers interact via voice.
 - Queries are transcribed, processed, and answered using a combination of AI and database querying.
 - Responses are played back in real-time, providing an interactive, voice-based service experience.
@@ -89,7 +89,7 @@ pip install -r requirements.txt
 
 If the `requirements.txt` file is not available, you can manually install the libraries by running:
 ```bash
-pip install python-dotenv pyaudio pydub pandas sqlite3 deepgram-sdk google-generativeai
+pip install python-dotenv pyaudio google-generativeai deepgram-sdk pydub pandas
 ```
 
 ### 4. Ensure Required Files
@@ -132,7 +132,7 @@ You will need API keys for:
 
 
 ### 6. Set Up the `.env` File
-Create a file named `.env` in the `standalone` directory and open it using any text editor. Set up your API keys by writing them in the following format inside the file:
+Create a file named `.env` in the root directory and open it using any text editor. Set up your API keys by writing them in the following format inside the file:
 ```plaintext
 DEEPGRAM_API_KEY=<your_deepgram_api_key>
 GOOGLE_API_KEY=<your_google_api_key>
