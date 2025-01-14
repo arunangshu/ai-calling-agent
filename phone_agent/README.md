@@ -57,16 +57,60 @@
 - Python 3.8 or higher
 - Recommended: Python 3.10
 
-### Virtual Environment Setup
-```bash
-# Windows
-python -m venv venv
-.\venv\Scripts\activate
 
-# Linux/MacOS
-python3 -m venv venv
-source venv/bin/activate
-```
+## Follow these steps to clone the repository and create a virtual environment .
+
+---
+
+### **1. Clone the Repository**
+
+1. Open **Command Prompt** or **Terminal**.
+2. Navigate to the folder where you want to clone the repository:
+   ```bash
+   cd path/to/your/folder
+   ```
+3. Clone the repository using Git:
+   ```bash
+   git clone https://github.com/your-username/your-repository-name.git
+   ```
+   Replace `your-username/your-repository-name` with the actual URL of the repository.
+
+4. Navigate into the cloned project folder:
+   ```bash
+   cd your-repository-name
+   ```
+
+---
+
+### **2. Create a Virtual Environment**
+
+1. Create a virtual environment (`venv`) in the project folder:
+   ```bash
+   python -m venv venv
+   ```
+
+2. **Activate the Virtual Environment**:
+   - On **Windows**:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - On **macOS/Linux**:
+     ```bash
+     source venv/bin/activate
+     ```
+
+   You should see `(venv)` at the beginning of your terminal prompt, indicating the virtual environment is active.
+
+---
+
+
+
+### Conclusion
+
+You have successfully set up the project with a virtual environment. You can now start working on the project.
+
+
+
 
 ### Package Installation
 ```bash
