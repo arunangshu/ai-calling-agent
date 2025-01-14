@@ -8,8 +8,6 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-orange)
-![Contributors](https://img.shields.io/github/contributors/arunangshu/ai-calling-agent)
-![Downloads](https://img.shields.io/github/downloads/arunangshu/ai-calling-agent/total?color=blue)
 
 This code integrates speech-to-text, text-to-speech, and customer service automation using APIs and local resources.\
 **[Jump to Usage Guide](#-how-to-use)**
