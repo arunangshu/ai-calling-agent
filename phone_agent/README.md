@@ -12,11 +12,11 @@
 
 ## 📑 Table of Contents
 - [AI Voice Calling Bot with Human-Like Conversations](#ai-voice-calling-bot-with-human-like-conversations)
-- [Project Highlights](#project-highlights)
-- [Core Features](#core-features)
-- [Technical Excellence](#technical-excellence)
-- [Use Cases](#️use-cases)
-- [Complete Setup Guide for Voice Call AI Application](#️complete-setup-guide-for-voice-call-ai-application)
+- [Project Highlights](#project-highlights-)
+- [Core Features](#core-features-)
+- [Technical Excellence](#technical-excellence-)
+- [Use Cases](#use-cases)
+- [Complete Setup Guide for Voice Call AI Application](#complete-setup-guide-for-voice-call-ai-application)
 
 ---
 
