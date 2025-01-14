@@ -126,6 +126,32 @@ sudo apt-get install ffmpeg
 sudo yum install epel-release
 sudo yum install ffmpeg ffmpeg-devel
 ```
+### FFmpeg Setup Guide for Windows
+
+Follow these steps to download and set up FFmpeg on your Windows system using an alternative GitHub release.
+
+---
+
+#### **1. Download FFmpeg from GitHub**
+
+1. Go to the FFmpeg Builds GitHub page:  
+   [FFmpeg Builds GitHub](https://github.com/BtbN/FFmpeg-Builds/releases)
+2. Download the `ffmpeg-master-latest-win64-gpl.zip` file under the "Latest" release.
+3. Extract the ZIP file to a folder (e.g., `C:\ffmpeg`).
+
+---
+
+#### **2. Set Up Environment Variables**
+
+1. **Locate Executables**: Inside the extracted folder, ensure `ffmpeg.exe`, `ffplay.exe`, and `ffprobe.exe` are in the `bin` folder.
+   - If `bin` folder is missing, create it and move the executables there.
+
+2. **Add to System Path**:
+   - Right-click **This PC** → **Properties** → **Advanced system settings** → **Environment Variables**.
+   - Under **System variables**, find `Path` → **Edit** → **New** and add `C:\ffmpeg\bin`.
+   - Click **OK** to save changes.
+
+---
 
 ### Verify FFmpeg Installation
 ```bash
