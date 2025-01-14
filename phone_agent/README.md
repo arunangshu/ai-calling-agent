@@ -14,9 +14,6 @@
 # AI Voice Calling Bot with Human-Like Conversations
 
 <div align="center">
-  <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/452248577/LH/TJ/HD/7285464/voice-ai-for-telemarketing-services-500x500.jpg" 
-         alt="AI Voice Bot Banner" 
-         style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1.5rem;">
   
   [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
   [![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com/)
