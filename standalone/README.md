@@ -1,15 +1,44 @@
-# AI Callbot (Standalone Version)
+# 🤖 AI Callbot (Standalone Version)
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Deepgram](https://img.shields.io/badge/Deepgram-Speech--to--Text-red)
+![Google Generative AI](https://img.shields.io/badge/Google-Generative%20AI-yellow)
+![SQLite](https://img.shields.io/badge/Database-SQLite-green)
+![License](https://img.shields.io/badge/License-MIT-green)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Cross--Platform-orange)
+
 This code integrates speech-to-text, text-to-speech, and customer service automation using APIs and local resources.\
-**[Jump to Usage Guide](#how-to-use)**
+**[Jump to Usage Guide](#-how-to-use)**
 
 ---
 
-## Demo Video
+## 📑 Table of Contents
+- [Demo Video](#-demo-video)
+- [Features](#-features)
+- [Overview](#-overview)
+- [How to Use](#-how-to-use)
+- [Updating the Database and Initial Prompt](#️-updating-the-database-and-initial-prompt)
+- [Troubleshooting](#️-troubleshooting)
+- [Acknowledgements](#-acknowledgments)
+
+---
+
+## 🎥 Demo Video
 [![Encode 2025 Calling Agent Demo | Standalone Version | KGPian Analysts](yt.jpg)](https://www.youtube.com/watch?v=HA0ScCus5yU)
 
 ---
 
-## Overview
+## ✨ Features
+- 🎙️ **Real-Time Voice Interaction**: Speak into your microphone to interact with the AI agent.
+- 🤖 **AI-Powered Responses**: Uses Google's Generative AI for intelligent, conversational replies.
+- 📊 **Dynamic Database Queries**: Queries an in-memory SQLite database for product information.
+- 🔊 **Audio Feedback**: Converts responses into synthesized speech for a seamless voice experience.
+- 🔄 **Customizable Use Case**: Easily modify the chatbot's behavior and database to suit different domains.
+
+---
+
+## 👀 Overview
 This project is a real-time, voice-based customer interaction system that combines advanced AI, speech-to-text, text-to-speech, and database management technologies. It leverages Deepgram's API for accurate transcription and speech synthesis and Google Generative AI (Gemini) to provide intelligent and context-aware responses. Designed for versatility, the app can handle a variety of use cases, from customer service to domain-specific virtual assistants, with dynamic database integration for personalized and precise interactions. The system is easy to configure, scalable, and offers a seamless way to interact with users through natural, conversational speech.
 
 ### Core Functionality:
@@ -46,7 +75,7 @@ This project is a real-time, voice-based customer interaction system that combin
    - Detects when the customer is satisfied (`EXIT` keyword) and terminates the conversation.
 
 ### High-Level Use Case:
-This script appears to be for a **customer service application** where:
+This script is for a **customer service application** where:
 - Customers interact via voice.
 - Queries are transcribed, processed, and answered using a combination of AI and database querying.
 - Responses are played back in real-time, providing an interactive, voice-based service experience.
@@ -62,7 +91,7 @@ It is effectively a virtual customer service agent capable of real-time, dynamic
 
 ---
 
-## How to Use
+## 🤔 How to Use
 
 Follow the steps below to set up and run the app on your system:
 
@@ -159,15 +188,7 @@ Alternately, press `Ctrl+C` to manually terminate it.
 
 ---
 
-### Troubleshooting
-- **Microphone Issues**: Ensure your microphone is connected and properly configured. Check your system's audio input settings.
-- **API Errors**: Double-check your `.env` file for correct API keys.
-- **Dependencies**: If you encounter errors about missing packages, ensure all dependencies are installed correctly.
-- **Missing Files**: Verify that `Products.csv` and `start_audio.mp3` are in the root directory.
-
----
-
-## Updating the Database and Initial Prompt
+## ⚙️ Updating the Database and Initial Prompt
 As your application evolves, you may need to update its functionality to cater to different use cases or datasets. For instance, you might want to change the chatbot's behavior to handle a new domain, such as healthcare, education, or retail, or replace the product inventory database with a new dataset. This section provides a comprehensive guide on how to update the database with a new CSV file and modify the initial prompt in the code to adapt the chatbot’s role and functionality to a new use case.
 
 ### 1. **Updating the Database**
@@ -208,8 +229,6 @@ You are a professional phone agent for a customer service department...
 #### Step 2.2: Modify the Prompt
 Replace the text inside the triple quotes with a new use case. Remember to state the columns and give it the first few rows. Also precisely mention how you want the conversation agent to respond.
 
----
-
 ### 3. **Testing the Changes**
 
 #### Step 3.1: Verify Database Integration
@@ -223,4 +242,21 @@ Replace the text inside the triple quotes with a new use case. Remember to state
 
 ---
 
-Happy AI Calling!
+### ⚠️ Troubleshooting
+- **Microphone Issues**: Ensure your microphone is connected and properly configured. Check your system's audio input settings.
+- **API Errors**: Double-check your `.env` file for correct API keys.
+- **Dependencies**: If you encounter errors about missing packages, ensure all dependencies are installed correctly.
+- **Missing Files**: Verify that `Products.csv` and `start_audio.mp3` are in the root directory.
+
+---
+
+## 🙌 Acknowledgments
+- **Deepgram**: For Speech-to-Text and Text-to-Speech APIs.
+- **Google Generative AI**: For creating intelligent conversations.
+- **SQLite**: For database querying and management.
+- **FFmpeg**: For seamless audio processing.
+- **Pydub**: For handling and playing audio files.
+
+---
+
+Happy AI Calling! 🚀📞
