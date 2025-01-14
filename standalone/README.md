@@ -70,7 +70,7 @@ Follow the steps below to set up and run the app on your system:
 Ensure you have the following installed on your system:
 - **Python 3.8+**
 - A package manager like `pip`
-- **Git and Github CLI**: For cloning the repository. If you don’t have it, [download Git here](https://git-scm.com/){:target="_blank"} and [download and install Github CLI here](https://cli.github.com/){:target="_blank"} and set it up using ```gh auth login```.
+- **Git and Github CLI**: For cloning the repository. If you don’t have it, <a href="https://git-scm.com/" target="_blank">download Git here</a> and <a href="https://cli.github.com/" target="_blank">download and install Github CLI here</a> and set it up using `gh auth login`.
 
 ### 2. Clone the Repository
 ```bash
@@ -79,7 +79,7 @@ cd ai-calling-agent
 cd standalone
 ```
 
-Alternately, you can [download the repository as zip](https://github.com/arunangshu/ai-calling-agent/archive/refs/heads/main.zip), extract it and open the folder `standalone`. Then right-click inside the folder in an empty area and click on `Open in Terminal`.
+Alternately, you can <a href="https://github.com/arunangshu/ai-calling-agent/archive/refs/heads/main.zip" target="_blank">download the repository as zip</a>, extract it and open the folder `standalone`. Then right-click inside the folder in an empty area and click on `Open in Terminal`.
 
 ### 3. Install Dependencies
 Install the necessary Python libraries using the following command:
@@ -106,7 +106,7 @@ You will need API keys for:
 
 #### **Deepgram API**: For speech-to-text and text-to-speech.
 ##### If you already have a Deepgram account:
-1. Go to [Deepgram Console Log In](https://console.deepgram.com/login){:target="_blank"}.
+1. Go to <a href="https://console.deepgram.com/login" target="_blank">Deepgram Console Log In</a>.
 2. Login to your account.
 3. Click on `API Keys` on the left pane.
 4. Click on `Create a New API Key`.
@@ -115,8 +115,8 @@ You will need API keys for:
 7. Copy this secret API Key and save it somewhere safe. You will not be able to see the API key on the website again. If you lose the key, you will have to create a new one.
 
 ##### If you do not have a Deepgram account:
-1. Go to [Deepgram Console Sign Up](https://console.deepgram.com/signup){:target="_blank"}.
-2. Click on `Sign up with Google` for ease
+1. Go to <a href="https://console.deepgram.com/signup" target="_blank">Deepgram Console Sign Up</a>.
+2. Click on `Sign up with Google` for ease.
 3. Select your preferred Google Account and your account will be created.
 4. Click on `Create API Key`.
 5. Give a name for your API Key.
@@ -124,12 +124,11 @@ You will need API keys for:
 7. Copy this secret API Key and save it somewhere safe. You will not be able to see the API key on the website again. If you lose the key, you will have to create a new one.
 
 #### **Google Generative AI**: For chatbot functionality.
-1. Go to [Google AI Studio > Get API Key](https://aistudio.google.com/apikey){:target="_blank"}
-2. Click on `Create API Key`
+1. Go to <a href="https://aistudio.google.com/apikey" target="_blank">Google AI Studio > Get API Key</a>.
+2. Click on `Create API Key`.
 3. Click on the Search Bar and select `Gemini API`.
 4. Click on `Create API key in existing project`.
 5. Copy the API key and save it somewhere. Keep it secret.
-
 
 ### 6. Set Up the `.env` File
 Create a file named `.env` in the root directory and open it using any text editor. Set up your API keys by writing them in the following format inside the file:
@@ -149,7 +148,7 @@ python Encode.py
 Alternately, you can directly open the `Encode.py` file using Python.
 
 ### 8. Interact with the Application
-- Wait for sometime.
+- Wait for some time.
 - When prompted, speak into your microphone to interact with the app.
 - The app will transcribe your input, process it using the chatbot, and respond with synthesized speech.
 - Follow the prompts to complete your session.
@@ -207,7 +206,7 @@ You are a professional phone agent for a customer service department...
 ```
 
 #### Step 2.2: Modify the Prompt
-Replace the text inside the triple quotes with a new use case. Remember to state the columns and give it the first few rows. ALso precisely mention how you want the conversation agent to respond.
+Replace the text inside the triple quotes with a new use case. Remember to state the columns and give it the first few rows. Also precisely mention how you want the conversation agent to respond.
 
 ---
 
