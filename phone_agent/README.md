@@ -25,9 +25,9 @@
 - **Contextual AI Brain**: Powered by Google's Gemini Pro for incredibly natural conversations
 - **Sentiment Analysis**: Understands customer emotions and responds with appropriate empathy
 - **Interactive Voice Interface**: Crystal-clear voice synthesis with Deepgram for natural speech
-- **Smart Database Integration**: Seamlessly accesses and communicates database information
+- **Smart Database Integration**: Seamlessly accesses and communicates database information (customise database .csv file as per the need)
 - **Real-Time Processing**: Lightning-fast speech recognition and response generation
-- **User-Friendly Control**: Simple web interface to manage and initiate calls
+- **User-Friendly Control**: Simple web interface to manage and initiate calls to customers.
 
 ## Technical Excellence 💫
 
@@ -267,8 +267,8 @@ WEBHOOK_BASE_URL=your_ngrok_url
 
 ## 5. Running the Application
 
-### Starting the Application
-1. Start Ngrok first:
+### Starting the Application 
+1. Start Ngrok first (in terminal opened in the project folder):
    ```bash
    ngrok http 5000
    ```
@@ -277,7 +277,7 @@ WEBHOOK_BASE_URL=your_ngrok_url
    - .env file WEBHOOK_BASE_URL
    - Twilio webhook URL (process given above)
 
-3. Start Flask application:
+3. Start Flask application (in another terminal opened in the project folder):
    ```bash
    python phone_agent_app.py
    ```
