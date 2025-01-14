@@ -1,7 +1,7 @@
 # AI Voice Calling Bot with Human-Like Conversations
 
 <div align="center">
-  <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/artificial-intelligence-2557399_960_720.jpg" 
+  <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/452248577/LH/TJ/HD/7285464/voice-ai-for-telemarketing-services-500x500.jpg" 
          alt="AI Voice Bot Banner" 
          style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1.5rem;">
   
