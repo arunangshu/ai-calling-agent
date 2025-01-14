@@ -1,16 +1,3 @@
-
-
-# 📑 Table of Contents
-- [AI Voice Calling Bot with Human-Like Conversations](#ai-voice-calling-bot-with-human-like-conversations)
-- [Project Highlights](#project-highlights)
-- [Core Features](#-core-features)
-- [Technical Excellence](#-technical-excellence)
-- [Use Cases](#️use-cases)
-- [Complete Setup Guide for Voice Call AI Application](#️complete-setup-guide-for-voice-call-ai-application)
-
-
-
-
 # AI Voice Calling Bot with Human-Like Conversations
 
 <div align="center">
@@ -21,7 +8,19 @@
   [![Google AI](https://img.shields.io/badge/Google%20AI-Gemini%20Pro-orange.svg)](https://ai.google.dev/)
 </div>
 
-# Project Highlights ✨
+---
+
+## 📑 Table of Contents
+- [AI Voice Calling Bot with Human-Like Conversations](#ai-voice-calling-bot-with-human-like-conversations)
+- [Project Highlights](#project-highlights)
+- [Core Features](#-core-features)
+- [Technical Excellence](#-technical-excellence)
+- [Use Cases](#️use-cases)
+- [Complete Setup Guide for Voice Call AI Application](#️complete-setup-guide-for-voice-call-ai-application)
+
+---
+
+## Project Highlights ✨
 
 - **Remarkably Human-Like Interactions**: Engages in natural, fluid conversations that feel genuinely human, complete with context awareness and appropriate pauses
 - **Emotional Intelligence**: Recognizes and responds to customer emotions, adapting tone and responses accordingly
@@ -30,7 +29,7 @@
 - **Memory & Context**: Remembers conversation history and maintains context throughout the call, just like a human agent
 - **Smart Response Adaptation**: Adjusts communication style based on customer preferences and needs
 
-## Core Features 🚀
+### Core Features 🚀
 
 - **Contextual AI Brain**: Powered by Google's Gemini Pro for incredibly natural conversations
 - **Sentiment Analysis**: Understands customer emotions and responds with appropriate empathy
@@ -40,7 +39,7 @@
 - **Real-Time Processing**: Lightning-fast speech recognition and response generation
 - **User-Friendly Control**: Simple web interface to manage and initiate calls to customers.
 
-## Technical Excellence 💫
+### Technical Excellence 💫
 
 - **Advanced AI Technology**: Google Generative AI (gemini-2.0-flash-exp) for human-like conversation
 - **Professional Voice Services**: Twilio telephony integration
@@ -49,7 +48,7 @@
 - **Efficient Audio Processing**: FFmpeg integration for optimal voice quality
 - **Clean Frontend**: Intuitive HTML/JavaScript interface
 
-## Use Cases
+### Use Cases
 
 - 🎯 Customer Service Excellence
 - 📅 Smart Appointment Management
@@ -60,20 +59,20 @@
 
 
 
-# Complete Setup Guide for Voice Call AI Application
+## Complete Setup Guide for Voice Call AI Application
 
-## 1. Python Environment Setup
+### 1. Python Environment Setup
 
-### Python Version Requirements
+#### Python Version Requirements
 - Python 3.8 or higher
 - Recommended: Python 3.10
 
 
-### Follow these steps to clone the repository and create a virtual environment .
+#### Follow these steps to clone the repository and create a virtual environment .
 
 ---
 
-#### **1. Clone the Repository**
+##### **1. Clone the Repository**
 
 1. Open **Command Prompt** or **Terminal**.
 2. Navigate to the folder where you want to clone the repository:
@@ -93,7 +92,7 @@
 
 ---
 
-#### **2. Create a Virtual Environment**
+##### **2. Create a Virtual Environment**
 
 1. Create a virtual environment (`venv`) in the project folder:
    ```bash
@@ -116,21 +115,21 @@
 
 
 
-### Conclusion
+#### Conclusion
 
 You have successfully set up the project with a virtual environment. You can now start working on the project.
 
 
 
 
-## 2. Package Installation
+### 2. Package Installation
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 
-### Common Package Installation Issues
+#### Common Package Installation Issues
 1. **pydub Installation Issues**
    - Error: `FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'`
    ```
@@ -146,9 +145,9 @@ pip install -r requirements.txt
    sudo apt-get install python3-dev build-essential
    ```
 
-###  FFmpeg Installation (Required for pydub)
+####  FFmpeg Installation (Required for pydub)
 
-### Windows
+##### Windows
 1. Download FFmpeg from https://ffmpeg.org/download.html
 2. Extract to C:\ffmpeg
 3. Add to System PATH:
@@ -156,12 +155,12 @@ pip install -r requirements.txt
    - Edit Path variable
    - Add new entry: C:\ffmpeg\bin
 
-### MacOS
+##### MacOS
 ```bash
 brew install ffmpeg
 ```
 
-### Linux
+##### Linux
 ```bash
 # Ubuntu/Debian
 sudo apt-get update
@@ -171,13 +170,13 @@ sudo apt-get install ffmpeg
 sudo yum install epel-release
 sudo yum install ffmpeg ffmpeg-devel
 ```
-### If previous way does not work this is the alternative way to do ffmpeg installation :- 
+##### If previous way does not work this is the alternative way to do ffmpeg installation :- 
 
 Follow these steps to download and set up FFmpeg on your Windows system using an alternative GitHub release.
 
 ---
 
-#### **1. Download FFmpeg from GitHub**
+###### **1. Download FFmpeg from GitHub**
 
 1. Go to the FFmpeg Builds GitHub page:  
    [FFmpeg Builds GitHub](https://github.com/BtbN/FFmpeg-Builds/releases)
@@ -186,7 +185,7 @@ Follow these steps to download and set up FFmpeg on your Windows system using an
 
 ---
 
-#### **2. Set Up Environment Variables**
+###### **2. Set Up Environment Variables**
 
 1. **Locate Executables**: Inside the extracted folder, ensure `ffmpeg.exe`, `ffplay.exe`, and `ffprobe.exe` are in the `bin` folder.
    - If `bin` folder is missing, create it and move the executables there.
@@ -198,14 +197,14 @@ Follow these steps to download and set up FFmpeg on your Windows system using an
 
 ---
 
-### Verify FFmpeg Installation
+##### Verify FFmpeg Installation
 ```bash
 ffmpeg -version
 ```
 
-## 3. External Services Setup
+### 3. External Services Setup
 
-### A. Ngrok Setup
+#### A. Ngrok Setup
 1. Download Ngrok from https://ngrok.com/download
 2. Create free account at https://ngrok.com
 3. Get your auth token from dashboard
@@ -222,7 +221,7 @@ ffmpeg -version
    ngrok http 5000
    ```
 
-### B. Twilio Setup
+#### B. Twilio Setup
 1. Create account at https://www.twilio.com/try-twilio
 2. Get from Twilio Console:
    - Account SID
@@ -235,21 +234,21 @@ ffmpeg -version
      - Set webhook URL to your Ngrok URL + "/start_conversation"
      - Method: HTTP POST
 
-### C. Deepgram Setup
+#### C. Deepgram Setup
 1. Create account at https://deepgram.com/
 2. Generate API key with TTS permissions
 3. Store key in .env file
 
-### D. Google AI (Gemini) Setup
+#### D. Google AI (Gemini) Setup
 1. Visit https://ai.google.dev/
 2. Create new project
 3. Enable Gemini API
 4. Generate API key
 5. Add to .env file
 
-## 4. Application Configuration
+### 4. Application Configuration
 
-### Environment Variables
+#### Environment Variables
 Create .env file in project root:
 ```
 TWILIO_ACCOUNT_SID=your_account_sid
@@ -259,16 +258,16 @@ GOOGLE_API_KEY=your_gemini_api_key
 WEBHOOK_BASE_URL=your_ngrok_url
 ```
 
-### Database Setup
+#### Database Setup
 1. Prepare Products.csv with columns:
    ```
    Product Name,Category,Brand,Price in Rupees,Stock,Description
    ```
 2. Place in project root directory
 
-## 5. Running the Application
+### 5. Running the Application
 
-### Starting the Application 
+#### Starting the Application 
 1. Start Ngrok first (in terminal opened in the project folder):
    ```bash
    ngrok http 5000
@@ -283,9 +282,9 @@ WEBHOOK_BASE_URL=your_ngrok_url
    python phone_agent_app.py
    ```
 
-## 6. Troubleshooting Guide
+### 6. Troubleshooting Guide
 
-### FFmpeg Issues
+#### FFmpeg Issues
 1. **Command Not Found**
    ```
    Solution: Verify PATH environment variable includes FFmpeg
@@ -299,7 +298,7 @@ WEBHOOK_BASE_URL=your_ngrok_url
    3. Check audio file format support
    ```
 
-### Ngrok Issues
+#### Ngrok Issues
 1. **Connection Failed**
    ```
    Solutions:
@@ -319,7 +318,7 @@ WEBHOOK_BASE_URL=your_ngrok_url
    kill -9 <PID>
    ```
 
-### Twilio Issues
+#### Twilio Issues
 1. **Call Failed**
    ```
    Check:
@@ -337,7 +336,7 @@ WEBHOOK_BASE_URL=your_ngrok_url
    3. Ensure Flask app is running
    ```
 
-### Deepgram Issues
+#### Deepgram Issues
 1. **TTS Failed**
    ```
    Check:
@@ -346,7 +345,7 @@ WEBHOOK_BASE_URL=your_ngrok_url
    3. Text length (max 5000 chars)
    ```
 
-### Database Issues
+#### Database Issues
 1. **CSV Loading Error**
    ```
    Solutions:
@@ -363,9 +362,9 @@ WEBHOOK_BASE_URL=your_ngrok_url
    3. Ensure sufficient disk space
    ```
 
-## 7. Testing Your Setup
+### 7. Testing Your Setup
 
-### Test Environment Variables
+#### Test Environment Variables
 ```python
 import os
 from dotenv import load_dotenv
@@ -384,7 +383,7 @@ for var in required_vars:
         print(f"Missing: {var}")
 ```
 
-### Test Twilio Connection
+#### Test Twilio Connection
 ```python
 from twilio.rest import Client
 
@@ -399,7 +398,7 @@ except Exception as e:
     print(f"Twilio error: {e}")
 ```
 
-### Test Database
+#### Test Database
 ```python
 import pandas as pd
 import sqlite3
@@ -413,7 +412,7 @@ except Exception as e:
     print(f"Database error: {e}")
 ```
 
-## 8. Production Considerations
+### 8. Production Considerations
 
 1. Always keep Ngrok running to maintain webhook accessibility
 2. Monitor Twilio credit balance
@@ -425,7 +424,7 @@ except Exception as e:
 8. Regular testing of voice quality
 9. Monitor memory usage
 
-## 9. Security Considerations
+### 9. Security Considerations
 
 1. Never commit .env file to version control
 2. Keep API keys secure
@@ -436,7 +435,7 @@ except Exception as e:
 7. Keep all packages updated
 8. Regular security audits
 
-## 10. Maintenance Tips
+### 10. Maintenance Tips
 
 1. Regularly check API quotas
 2. Monitor disk space usage
