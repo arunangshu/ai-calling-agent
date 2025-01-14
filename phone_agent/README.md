@@ -58,11 +58,11 @@
 - Recommended: Python 3.10
 
 
-## Follow these steps to clone the repository and create a virtual environment .
+### Follow these steps to clone the repository and create a virtual environment .
 
 ---
 
-### **1. Clone the Repository**
+#### **1. Clone the Repository**
 
 1. Open **Command Prompt** or **Terminal**.
 2. Navigate to the folder where you want to clone the repository:
@@ -82,7 +82,7 @@
 
 ---
 
-### **2. Create a Virtual Environment**
+#### **2. Create a Virtual Environment**
 
 1. Create a virtual environment (`venv`) in the project folder:
    ```bash
@@ -112,13 +112,13 @@ You have successfully set up the project with a virtual environment. You can now
 
 
 
-### Package Installation
+## 2. Package Installation
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-#### requirements.txt Contents
+### requirements.txt Contents
 ```
 flask==3.0.0
 twilio==8.10.0
@@ -129,7 +129,7 @@ deepgram-sdk==2.12.0
 google-generativeai==0.3.1
 ```
 
-#### Common Package Installation Issues
+### Common Package Installation Issues
 1. **pydub Installation Issues**
    - Error: `FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'`
    ```
@@ -145,7 +145,7 @@ google-generativeai==0.3.1
    sudo apt-get install python3-dev build-essential
    ```
 
-## 2. FFmpeg Installation (Required for pydub)
+###  FFmpeg Installation (Required for pydub)
 
 ### Windows
 1. Download FFmpeg from https://ffmpeg.org/download.html
@@ -227,7 +227,7 @@ ffmpeg -version
    - Account SID
    - Auth Token
    - Purchase a Phone Number with voice capabilities
-3. Configure webhook URL:
+3. Configure webhook URL: (after running ngrok in terminal : url will be given by ngrok)
    - Go to Phone Numbers → Active Numbers
    - Select your number
    - Under Voice & Fax:
@@ -275,11 +275,11 @@ WEBHOOK_BASE_URL=your_ngrok_url
 
 2. Copy Ngrok HTTPS URL and update:
    - .env file WEBHOOK_BASE_URL
-   - Twilio webhook URL
+   - Twilio webhook URL (process given above)
 
 3. Start Flask application:
    ```bash
-   python app5.py
+   python phone_agent_app.py
    ```
 
 ## 6. Troubleshooting Guide
