@@ -4,9 +4,12 @@
 ![Deepgram](https://img.shields.io/badge/Deepgram-Speech--to--Text-red)
 ![Google Generative AI](https://img.shields.io/badge/Google-Generative%20AI-yellow)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-green)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-Audio%20Processing-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
+![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-orange)
+![Contributors](https://img.shields.io/github/contributors/arunangshu/ai-calling-agent)
+![Downloads](https://img.shields.io/github/downloads/arunangshu/ai-calling-agent/total?color=blue)
 
 This code integrates speech-to-text, text-to-speech, and customer service automation using APIs and local resources.\
 **[Jump to Usage Guide](#-how-to-use)**
