@@ -123,7 +123,7 @@ You have successfully set up the project with a virtual environment. You can now
 
 ### 2. Package Installation
 ```bash
-pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
