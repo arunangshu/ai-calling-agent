@@ -5,3 +5,4 @@ pandas
 pydub
 deepgram-sdk
 google-generativeai
+audioop-lts
