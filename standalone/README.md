@@ -89,7 +89,7 @@ pip install -r requirements.txt
 
 If the `requirements.txt` file is not available, you can manually install the libraries by running:
 ```bash
-pip install python-dotenv pyaudio google-generativeai deepgram-sdk pydub pandas
+pip install python-dotenv pyaudio google-generativeai deepgram-sdk pydub pandas audioop-lts
 ```
 
 ### 4. Ensure Required Files
