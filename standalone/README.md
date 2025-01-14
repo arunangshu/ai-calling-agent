@@ -122,7 +122,64 @@ If the `requirements.txt` file is not available, you can manually install the li
 pip install python-dotenv pyaudio google-generativeai deepgram-sdk pydub pandas audioop-lts
 ```
 
-### 4. Ensure Required Files
+### 4. Installing FFmpeg
+
+The application uses `pydub`, which relies on **FFmpeg** for audio processing tasks. Follow the steps below to install and configure FFmpeg on your system:
+
+#### **Step 1: Download FFmpeg**
+- Visit the [official FFmpeg website](https://ffmpeg.org/download.html).
+- Choose the version for your operating system:
+  - **Windows**: Download a precompiled binary from a trusted source like [Gyan.dev](https://www.gyan.dev/ffmpeg/builds/) OR Install FFmpeg via winget:
+   ```bash
+   winget install ffmpeg
+   ```
+   Restart the terminal after installation.
+  - **macOS**: Install FFmpeg via Homebrew:
+    ```bash
+    brew install ffmpeg
+    ```
+  - **Linux**: Use your package manager (e.g., `apt`, `yum`, or `dnf`):
+    ```bash
+    sudo apt update
+    sudo apt install ffmpeg
+    ```
+
+#### **Step 2: Add FFmpeg to Your PATH**
+Follow this step only if running `ffmpeg -version` in the terminal shows that FFmpeg is not installed or recognised.\
+To ensure FFmpeg works from any directory, add it to your system's PATH.
+
+- **Windows**:
+  1. Extract the FFmpeg ZIP file.
+  2. Copy the path to the `bin` folder (e.g., `C:\ffmpeg\bin`).
+  3. Add the path to the System Environment Variables:
+     - Open **System Properties** > **Advanced** > **Environment Variables**.
+     - Under "System variables," find `Path` and click **Edit**.
+     - Add the FFmpeg `bin` folder path.
+  4. Restart your terminal or system to apply changes.
+
+- **macOS/Linux**:
+  Add FFmpeg to your PATH by editing your shell configuration file (e.g., `.bashrc` or `.zshrc`):
+  ```bash
+  export PATH="$PATH:/path/to/ffmpeg/bin"
+  ```
+  Replace `/path/to/ffmpeg/bin` with the actual FFmpeg `bin` folder path.
+
+#### **Step 3: Verify Installation**
+Run the following command in your terminal or command prompt:
+```bash
+ffmpeg -version
+```
+
+You should see the version details of FFmpeg. For example:
+```
+ffmpeg version 5.1.2 Copyright (c) 2000-2023 the FFmpeg developers
+built with gcc 9.4.0
+```
+
+#### **Step 4: Test Audio Processing**
+Run the application again to confirm FFmpeg is working correctly with `pydub`.
+
+### 5. Ensure Required Files
 Ensure the following files are present in the `standalone` folder:
 - `Encode.py`
 - `Products.csv`
@@ -130,7 +187,7 @@ Ensure the following files are present in the `standalone` folder:
 
 If not already present, download them from this repository and place them in the folder.
 
-### 5. Obtain API Keys
+### 6. Obtain API Keys
 _Follow the steps given in this section if you don't have the API keys._\
 You will need API keys for:
 
@@ -160,7 +217,7 @@ You will need API keys for:
 4. Click on `Create API key in existing project`.
 5. Copy the API key and save it somewhere. Keep it secret.
 
-### 6. Set Up the `.env` File
+### 7. Set Up the `.env` File
 Create a file named `.env` in the root directory and open it using any text editor. Set up your API keys by writing them in the following format inside the file:
 ```plaintext
 DEEPGRAM_API_KEY=<your_deepgram_api_key>
@@ -169,7 +226,7 @@ GOOGLE_API_KEY=<your_google_api_key>
 
 Replace `<your_deepgram_api_key>` and `<your_google_api_key>` with your actual keys and save the file.
 
-### 7. Run the Application
+### 8. Run the Application
 Execute the `Encode.py` script to start the application:
 ```bash
 python Encode.py
@@ -177,13 +234,13 @@ python Encode.py
 
 Alternately, you can directly open the `Encode.py` file using Python.
 
-### 8. Interact with the Application
+### 9. Interact with the Application
 - Wait for some time.
 - When prompted, speak into your microphone to interact with the app.
 - The app will transcribe your input, process it using the chatbot, and respond with synthesized speech.
 - Follow the prompts to complete your session.
 
-### 9. Exit the Application
+### 10. Exit the Application
 When your conversation ends, the chatbot automatically concludes with an `EXIT` command and the program closes.\
 Alternately, press `Ctrl+C` to manually terminate it.
 
@@ -248,6 +305,7 @@ Replace the text inside the triple quotes with a new use case. Remember to state
 - **API Errors**: Double-check your `.env` file for correct API keys.
 - **Dependencies**: If you encounter errors about missing packages, ensure all dependencies are installed correctly.
 - **Missing Files**: Verify that `Products.csv` and `start_audio.mp3` are in the root directory.
+- **FFmpeg Not Found Error**: Ensure FFmpeg is correctly added to your system's PATH. Test FFmpeg using `ffmpeg -version` to confirm it is installed. If the issue persists, try reinstalling FFmpeg and restarting your terminal.
 
 ---
 
