@@ -1,7 +1,9 @@
 # AI Voice Calling Bot with Human-Like Conversations
 
 <div align="center">
-  <img src="/api/placeholder/800/400" alt="AI Voice Bot Banner">
+  <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/artificial-intelligence-2557399_960_720.jpg" 
+         alt="AI Voice Bot Banner" 
+         style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 1.5rem;">
   
   [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
   [![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com/)
