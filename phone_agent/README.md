@@ -56,6 +56,7 @@
 - 📊 Interactive Surveys
 - 🤝 Automated Follow-ups
 
+## NOTE: BASIC WORKING ARCHITECTURE OF PHONE AGENT IS SIMILAR AS STANDALONE VERSION OF THIS VOICE CALLING !
 
 
 ## Complete Setup Guide for Voice Call AI Application
