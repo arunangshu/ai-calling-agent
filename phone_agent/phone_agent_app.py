@@ -171,9 +171,15 @@ def process_conversation():
     should_end = bot_response.endswith('EXIT')
 
     # Handle SQL queries in bot_response
-    while bot_response.startswith("SQL:"):
+    while "SQL: " in bot_response:
         try:
-            sql_query = bot_response[5:].strip()
+            bot_response, sql_query = bot_response.split("SQL: ", 1)
+            if bot_response.strip():
+                with tempfile.NamedTemporaryFile(suffix='.mp3', delete=False) as temp_file:
+                    if synthesize_audio(bot_response, temp_file.name):
+                        response.play(request.url_root + f'audio/{base64.b64encode(temp_file.name.encode()).decode()}')
+                    else:
+                        response.say(bot_response)
             sql_result = pd.read_sql_query(sql_query, conn)
             response_message = f"SQL Response:\n{sql_result.to_string(index=False)}"
         except Exception as e:
