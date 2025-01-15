@@ -2,7 +2,7 @@
 
 ## Demo Video
 
-[![Watch the video](https://img.youtube.com/vi/-fahyHZuT2fT08M0/hqdefault.jpg)](https://youtu.be/eioGKkRR43g?si=-fahyHZuT2fT08M0)
+[![Watch the video](https://img.youtube.com/vi/-fahyHZuT2fT08M0/default.jpg)](https://youtu.be/eioGKkRR43g?si=-fahyHZuT2fT08M0)
 
 
 
