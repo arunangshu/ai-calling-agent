@@ -123,7 +123,7 @@ You have successfully set up the project with a virtual environment. You can now
 
 ### 2. Package Installation
 ```bash
-python -m pip install --upgrade pip
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -258,11 +258,11 @@ WEBHOOK_BASE_URL=your_ngrok_url
 ```
 
 #### Database Setup
-1. Prepare Products.csv with columns:
+1. Update details in Products.csv if required with columns:
    ```
    Product Name,Category,Brand,Price in Rupees,Stock,Description
    ```
-2. Place in project root directory
+2. If you need to change the entire structure of Products.csv, update the initial prompt accordingly.
 
 ### 5. Running the Application
 
@@ -276,7 +276,7 @@ WEBHOOK_BASE_URL=your_ngrok_url
    - .env file WEBHOOK_BASE_URL
    - Twilio webhook URL (process given above)
 
-3. Start Flask application (in another terminal opened in the project folder):
+3. Start Flask application (in another terminal opened in the project folder `phone_agent`):
    ```bash
    python phone_agent_app.py
    ```

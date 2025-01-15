@@ -117,18 +117,35 @@ def make_call():
         phone_number = request.json.get('phone_number')
         if not phone_number:
             return jsonify({'status': 'error', 'message': 'Phone number is required.'}), 400
+
+        # Check if the phone number is verified
+        verified_numbers = [
+            caller_id.phone_number for caller_id in twilio_client.outgoing_caller_ids.list()
+        ]
+
+        if phone_number not in verified_numbers:
+            # Add Caller ID for verification
+            validation_request = twilio_client.validation_requests.create(
+                friendly_name="Unverified Caller",
+                phone_number=phone_number
+            )
+            return jsonify({
+                'status': 'verification_needed',
+                'message': 'Phone number requires verification. Please answer the call and verify.',
+                'validation_code': validation_request.validation_code
+            }), 200
+
+        # Proceed with the call if verified
         call = twilio_client.calls.create(
             url=os.getenv('WEBHOOK_BASE_URL') + '/start_conversation',
             to=phone_number,
             from_=TWILIO_PHONE_NUMBER
         )
         return jsonify({'status': 'success', 'call_sid': call.sid})
+
     except Exception as e:
         app.logger.error(f"Error making call: {e}")
         return jsonify({'status': 'error', 'message': str(e)}), 500
-    
-
-
 
 @app.route('/start_conversation', methods=['POST'])
 def start_conversation():

@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>AI Voice Bot Caller</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -164,15 +165,22 @@
         </div>
         <h1>AI Voice Bot Caller</h1>
         <div class="input-group">
-            <label for="phone">Enter Phone Number (Twilio verified phone number if you have free twilio account) </label>
-            <input 
-                type="tel" 
-                id="phone" 
-                placeholder="+12 34567890"
-                pattern="[\+]\d{1,3}\d{10}"
-                title="Please enter phone number in format: +12 34567890"
-            />
-        </div>
+			<label for="phone">
+				Enter Phone Number 
+				<br><br>
+				<span style="color: red; font-weight: bold;">
+					Currently, only verified numbers are supported since we are using the trial version of Twilio. Please contact 9123003808 to get your number verified or set up your own system using the steps given on our 
+					<a href="https://github.com/arunangshu/ai-calling-agent/tree/main/phone_agent" target="_blank" style="color: blue; text-decoration: underline;">Github repo</a>.
+				</span>
+			</label>
+			<input 
+				type="tel" 
+				id="phone" 
+				placeholder="+12 34567890"
+				pattern="[\+]\d{1,3}\d{10}"
+				title="Please enter phone number in format: +12 34567890"
+			/>
+		</div>
         <button onclick="makeCall()">
             <i class="fas fa-phone-alt"></i>
             <span>Make Call</span>
@@ -187,41 +195,48 @@
 
     <script>
         function makeCall() {
-            const phoneNumber = document.getElementById('phone').value;
-            const statusDiv = document.getElementById('status');
-            const callingAnimation = document.querySelector('.calling-animation');
-            
-            if (!phoneNumber) {
-                statusDiv.innerHTML = 'Please enter a phone number';
-                statusDiv.className = 'status-error';
-                return;
-            }
+			const phoneNumber = document.getElementById('phone').value;
+			const statusDiv = document.getElementById('status');
+			const callingAnimation = document.querySelector('.calling-animation');
 
-            // Show calling animation
-            callingAnimation.style.display = 'block';
-            statusDiv.style.opacity = '0';
-            
-            fetch('/make_call', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ phone_number: phoneNumber })
-            })
-            .then(response => response.json())
-            .then(data => {
-                callingAnimation.style.display = 'none';
-                statusDiv.innerHTML = data.status === 'success' 
-                    ? '<i class="fas fa-check-circle"></i> Call initiated successfully!' 
-                    : '<i class="fas fa-exclamation-circle"></i> Error: ' + data.message;
-                statusDiv.className = data.status === 'success' ? 'status-success' : 'status-error';
-            })
-            .catch(error => {
-                callingAnimation.style.display = 'none';
-                statusDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error: ' + error;
-                statusDiv.className = 'status-error';
-            });
-        }
+			if (!phoneNumber) {
+				statusDiv.innerHTML = 'Please enter a phone number';
+				statusDiv.className = 'status-error';
+				return;
+			}
+
+			// Show calling animation
+			callingAnimation.style.display = 'block';
+			statusDiv.style.opacity = '0';
+
+			fetch('/make_call', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ phone_number: phoneNumber })
+			})
+			.then(response => response.json())
+			.then(data => {
+				callingAnimation.style.display = 'none';
+				if (data.status === 'success') {
+					statusDiv.innerHTML = '<i class="fas fa-check-circle"></i> Call initiated successfully!';
+					statusDiv.className = 'status-success';
+				} else if (data.status === 'verification_needed') {
+					statusDiv.innerHTML = `<i class="fas fa-exclamation-circle"></i> Verification required. Answer the call and enter code: ${data.validation_code}`;
+					statusDiv.className = 'status-error';
+				} else {
+					statusDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error: ' + data.message;
+					statusDiv.className = 'status-error';
+				}
+			})
+			.catch(error => {
+				callingAnimation.style.display = 'none';
+				statusDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error: ' + error;
+				statusDiv.className = 'status-error';
+			});
+		}
+
 
         // Add input validation
         document.getElementById('phone').addEventListener('input', function(e) {
