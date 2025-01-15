@@ -1,11 +1,5 @@
 # AI Voice Calling Bot with Human-Like Conversations
 
-## Demo Video
-
-[![Watch the video](https://img.youtube.com/vi/-fahyHZuT2fT08M0/default.jpg)](https://youtu.be/eioGKkRR43g?si=-fahyHZuT2fT08M0)
-
-
-
 <div align="center">
   
   [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -13,6 +7,10 @@
   [![Twilio](https://img.shields.io/badge/Twilio-Integrated-red.svg)](https://www.twilio.com/)
   [![Google AI](https://img.shields.io/badge/Google%20AI-Gemini%20Pro-orange.svg)](https://ai.google.dev/)
 </div>
+
+## Demo Video
+
+[![Watch the video](yt.jpg)](https://youtu.be/eioGKkRR43g?si=-fahyHZuT2fT08M0)
 
 ---
 
